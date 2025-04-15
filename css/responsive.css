@@ -1,0 +1,122 @@
+/* 
+   SmartTech Solutions - Responsive Stylesheet
+   Author: SmartTech Solutions
+   Version: 1.0
+*/
+
+/* ======= LARGE SCREENS ======= */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+/* ======= MEDIUM SCREENS ======= */
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* ======= SMALL SCREENS ======= */
+@media (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        transition: left 0.3s;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .section-title h2 {
+        font-size: 30px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-col h3 {
+        margin: 0 auto 20px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* ======= EXTRA SMALL SCREENS ======= */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .services, 
+    .about, 
+    .features, 
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        margin-bottom: 30px;
+    }
+    
+    .section-title h2 {
+        font-size: 26px;
+    }
+    
+    .contact-container {
+        gap: 30px;
+    }
+}
